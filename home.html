@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>HAFSA // CYBER SYSTEM</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
+
+<style>
+
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Orbitron',sans-serif;
+}
+
+body{
+    background:#05070d;
+    color:white;
+    overflow:hidden;
+}
+
+/* GRID BACKGROUND */
+body::before{
+    content:'';
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:
+    linear-gradient(rgba(0,255,255,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,255,255,0.05) 1px, transparent 1px);
+    background-size:45px 45px;
+    z-index:-5;
+}
+
+/* GLOW */
+.blue{
+    position:absolute;
+    width:600px;
+    height:600px;
+    background:#00e5ff;
+    border-radius:50%;
+    filter:blur(180px);
+    opacity:0.12;
+    top:-250px;
+    left:-150px;
+}
+
+.red{
+    position:absolute;
+    width:500px;
+    height:500px;
+    background:#ff003c;
+    border-radius:50%;
+    filter:blur(180px);
+    opacity:0.12;
+    bottom:-200px;
+    right:-100px;
+}
+
+/* NAVBAR */
+nav{
+    width:100%;
+    padding:25px 70px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:relative;
+    z-index:10;
+}
+
+/* LOGO */
+.logo{
+    font-size:30px;
+    font-weight:800;
+    color:#00e5ff;
+    letter-spacing:4px;
+    text-shadow:0 0 10px #00e5ff;
+}
+
+/* MENU */
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:35px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-size:14px;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#00e5ff;
+    text-shadow:0 0 10px #00e5ff;
+}
+
+/* HERO SECTION */
+.hero{
+    height:85vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    position:relative;
+}
+
+/* TAG */
+.tag{
+    color:#ff003c;
+    letter-spacing:3px;
+    margin-bottom:15px;
+}
+
+/* TITLE */
+.hero h1{
+    font-size:85px;
+    letter-spacing:6px;
+    background:linear-gradient(to right,#fff,#00e5ff);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+/* TEXT */
+.hero p{
+    max-width:800px;
+    margin-top:20px;
+    color:#999;
+    line-height:1.8;
+}
+
+/* BUTTONS */
+.buttons{
+    margin-top:40px;
+    display:flex;
+    gap:20px;
+}
+
+/* BUTTON STYLE */
+.btn{
+    padding:14px 35px;
+    text-decoration:none;
+    font-size:14px;
+    letter-spacing:2px;
+    transition:0.3s;
+    border-radius:6px;
+}
+
+/* LOGIN BUTTON */
+.login-btn{
+    border:1px solid #00e5ff;
+    color:#00e5ff;
+}
+
+.login-btn:hover{
+    background:#00e5ff;
+    color:black;
+    box-shadow:0 0 25px #00e5ff;
+}
+
+/* SECOND BUTTON */
+.secondary-btn{
+    border:1px solid #ff003c;
+    color:#ff003c;
+}
+
+.secondary-btn:hover{
+    background:#ff003c;
+    color:black;
+    box-shadow:0 0 25px #ff003c;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="blue"></div>
+<div class="red"></div>
+
+<!-- NAVBAR -->
+<nav>
+
+<div class="logo">HAFSA X</div>
+
+<ul>
+<li><a href="#">HOME</a></li>
+<li><a href="login.html">LOGIN</a></li>
+<li><a href="projects.html">PROJECTS</a></li>
+<li><a href="#">CONTACT</a></li>
+</ul>
+
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+
+<div class="tag">ETHICAL HACKER • CYBER SECURITY</div>
+
+<h1>CYBER SYSTEM</h1>
+
+<p>
+Welcome to a secure digital environment built for ethical hacking,
+cyber defense systems and modern web technologies.
+</p>
+
+<div class="buttons">
+
+<a href="login.html" class="btn login-btn">ENTER LOGIN</a>
+
+<a href="#" class="btn secondary-btn">VIEW SYSTEM</a>
+
+</div>
+
+</section>
+
+</body>
+</html>
